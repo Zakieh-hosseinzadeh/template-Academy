@@ -1,0 +1,136 @@
+@media screen and (max-width: 1200px ) {
+    #portion {
+        flex-direction: column-reverse;
+    }
+
+    #right, #left {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #menu .btn-blue {
+        display: none;
+    }
+
+    #right {
+        text-align: center;
+    }
+
+    #service-box {
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    .service {
+        flex-basis: 48%;
+    }
+
+    #teacher-box {
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    .teacher {
+        flex-basis: 48%;
+    }
+
+    #news-form {
+        width: 80%;
+    }
+
+    #columns-box {
+        flex-wrap: wrap;
+    }
+
+    .column {
+        flex-basis: 48%;
+    }
+
+    #menu > ul > li {
+        margin: 0 10px;
+    }
+
+    #course-box {
+        grid-template-columns:auto auto;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #menu > ul {
+        position: fixed;
+        width: 250px;
+        height: 100%;
+        right: -100%;
+        top: 0;
+        z-index: 10;
+        background-color: var(--mycolor);
+        transition: all 0.3s;
+
+    }
+    #menu > ul.show{
+        right: 0;
+    }
+
+
+    #menu > ul > li {
+        display: block;
+        margin: 0;
+    }
+    #menu > ul > li > a:link,
+    #menu > ul > li > a:visited{
+        display: block;
+        padding: 20px;
+        color: white;
+        border-bottom: 1px solid #003f6d;
+        transition: all 0.3s;
+    }
+    #menu > ul > li > a:hover{
+        background-color: var(--hovercolor);
+        padding-right: 30px;
+    }
+
+    #show-menu:link,
+    #show-menu:visited {
+        display: inline-block;
+    }
+
+    #filter {
+        flex-wrap: wrap;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    #filter a:link,
+    #filter a:visited {
+        display: block;
+    }
+
+    .column {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 576px ) {
+    .service {
+        flex-basis: 100%;
+    }
+
+    .teacher {
+        flex-basis: 100%;
+    }
+
+    #course-box {
+        grid-template-columns:auto;
+    }
+
+    #parent {
+        flex-wrap: wrap;
+    }
+
+    #designer, #copy {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
